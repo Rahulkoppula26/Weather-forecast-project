@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+
+</head>
+<body class="font-serif w-lvw h-lvh">
+    <header class=" w-lvw">
+        <div>
+            <h1 class=" h-20 text-3xl text-center flex justify-center items-center text-white bg-blue-700" >Weather Dashboard</h1>
+        </div>
+    </header>
+    <sidebar class="bg-black">
+      <form action="">
+        <label class="text-xl font-medium" for="cityname" >Enter a City Name</label><br>
+        <input class="w-60 border-solid border-2 border-black rounded" type="text" placeholder="Eg :Newyork, london, Tokyo" id="cityname" class="cityName" name="CityName"><br>
+        <button class="w-60 border-solid border-2 border-black rounded" type="button" value="submit" >Search</button><br>
+        <button class="w-60 border-solid border-2 border-black rounded" type="button" value="submit" >Use Current Location</button>
+      </form>
+    </sidebar>
+    <main>
+       <section class="bg-black">
+          <div class="locationDetails"></div>
+       </section>
+       <section class="bg-black h-20">
+          <h3>5-Day Forecast</h3>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+       </section>
+    </main>
+</body>
+</html>
