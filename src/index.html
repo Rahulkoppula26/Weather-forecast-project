@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="./output.css">
 
 </head>
-<body class="font-serif w-lvw h-lvh">
-    <header class=" w-lvw">
+<body class="font-serif">
+    <header class="">
         <div>
             <h1 class=" h-20 text-3xl text-center flex justify-center items-center text-white bg-blue-700" >Weather Dashboard</h1>
         </div>
     </header>
-    <sidebar class="bg-black">
-      <form action="">
-        <label class="text-xl font-medium" for="cityname" >Enter a City Name</label><br>
-        <input class="w-60 border-solid border-2 border-black rounded" type="text" placeholder="Eg :Newyork, london, Tokyo" id="cityname" class="cityName" name="CityName"><br>
-        <button class="w-60 border-solid border-2 border-black rounded" type="button" value="submit" >Search</button><br>
-        <button class="w-60 border-solid border-2 border-black rounded" type="button" value="submit" >Use Current Location</button>
-      </form>
-    </sidebar>
+    <sidebar class="bg-black w-96 h-5/6">
+        <form action="" class="w-64">
+          <label class=" w-60 text-xl font-medium" for="cityname" >Enter a City Name</label><br>
+          <input class="w-60 border-solid border-2 border-black rounded" type="text" placeholder="Eg :Newyork, london, Tokyo" id="cityname" class="cityName" name="CityName"><br>
+          <button class="w-60 border-solid border-2 border-black rounded" type="button" value="submit" >Search</button><br>
+          <button class="w-60 border-solid border-2 border-black rounded" type="button" value="submit" >Use Current Location</button>
+        </form>
+      </sidebar>
+    
     <main>
        <section class="bg-black">
           <div class="locationDetails"></div>
        </section>
-       <section class="bg-black h-20">
+       <article class="bg-black">
           <h3>5-Day Forecast</h3>
           <article></article>
           <article></article>
@@ -33,7 +34,7 @@
           <article></article>
           <article></article>
           <article></article>
-       </section>
+       </article>
     </main>
 </body>
 </html>

@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header {
+    position:relative;
+    top: 0;
+    left: 0;
+}
+sidebar{
+    position: fixed;
+    left: 0;
+    top: 15%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    height: 630px;
+    width: 1100px;
+    position: relative;
+    top: 10;
+    left:27%;
+}
