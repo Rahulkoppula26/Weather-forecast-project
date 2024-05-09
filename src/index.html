@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
+    <script src="./index.js"></script>
 
 </head>
 <body class="font-serif">
     <header class="">
         <div>
-            <h1 class=" h-20 text-3xl font-bold text-center flex justify-center items-center text-white bg-blue-700 " >Weather Dashboard</h1>
+            <h1 class=" h-20 text-3xl font-bold text-center flex justify-center items-center text-white bg-blue-700">Weather Dashboard</h1>
         </div>
     </header>
     <sidebar class="bg-blue-200 h-dvh ">
@@ -18,16 +19,22 @@
             <form action="" class="w-72 h-96 ">
                 <label class=" w-72 text-2xl font-bold my-10 py-9" for="cityname" >Enter a City Name</label><br>
                 <input class="buttons" type="text" placeholder="Eg :Newyork, london, Tokyo" id="cityname" class="cityName" name="CityName"><br>
-                <button class="buttons bg-blue-500 text-white text-xl font-medium" type="button" value="submit" >Search</button><br>
+                <button class="buttons bg-blue-500 text-white text-xl font-medium" id="searchBtn" name="SearchInfo" type="button" value="submit" >Search</button><br>
                 <div class="my-6 font-extrabold"><span>OR</span></div>
-                <button class="buttons bg-blue-500 text-white text-xl font-medium" type="button" value="submit" >Use Current Location</button>
+                <button class="buttons bg-blue-500 text-white text-xl font-medium" id="locationBtn" name="locationAccess" type="button" value="submit" >Use Current Location</button>
               </form>
         </div>
       </sidebar>
     
     <main class="w-9/12 h-dvh">
        <section class=" w-12/12 h-72 bg-blue-200">
-          <div class="locationDetails h-64 ml-8 mt-4 rounded-lg bg-blue-700 w-11/12"></div>
+          <div class="locationDetails h-64 ml-8 mt-4 rounded-lg bg-blue-700 w-11/12">
+            <img src="" class="weather-img" alt="">
+            <div class="locationDate"></div>
+            <div class="temp"></div>
+            <div class="wind"></div>
+            <div class="humidity"></div>
+          </div>
        </section>
        <section class="h-96 bg-blue-200">
           <div><h3 class="text-black font-bold bg-blue-200 ml-16 font-sans text-2xl">5-Day Forecast</h3></div>

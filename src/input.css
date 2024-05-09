@@ -25,7 +25,7 @@ main{
     top: 10;
     left:27%;
 }
-.buttons {
+.buttons,.searchbtn,.locationbtn {
     width: 18rem;
     border: solid black 2px;
     border-radius: 5px;
