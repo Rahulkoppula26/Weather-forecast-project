@@ -25,12 +25,38 @@ main{
     top: 10;
     left:27%;
 }
-.buttons,.searchbtn,.locationbtn {
+input,button {
     width: 18rem;
     border: solid black 2px;
     border-radius: 5px;
     margin: 1rem 0;
     height: 2rem;
+}
+.weather-img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  float: right;
+  top: 30%;
+  right: 10%;
+}
+.not-found {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  float: right;
+  bottom: 20%;
+  right: 10%;
+}
+.locationDate,.temp,.wind,.humidity {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  position: relative;
+  top: 30%;
+  left: 7%;
+}
+.locationDate {
+  font-size: 2rem;
 }
 form div {
     text-align: center;
