@@ -14,6 +14,7 @@ header {
 }
 sidebar{
     width: 415px;
+    height: 850px;
     position: fixed;
     left: 0;
     top: 11%;
@@ -32,12 +33,12 @@ input,button {
     margin: 1rem 0;
     height: 2rem;
 }
-.weather-img {
+div .weather-img {
   width: 100px;
   height: 100px;
   position: relative;
   float: right;
-  top: 30%;
+  top: 20%;
   right: 10%;
 }
 .not-found {
@@ -48,12 +49,13 @@ input,button {
   bottom: 20%;
   right: 10%;
 }
-.locationDate,.temp,.wind,.humidity {
+.locationDetails {
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
+  text-align: center;
   position: relative;
-  top: 30%;
-  left: 7%;
+  top: 10%;
+  left: 5%;
 }
 .locationDate {
   font-size: 2rem;
@@ -68,7 +70,7 @@ form div span {
   }
   
  form div span:before,
- form div span:after {
+ form div span:after { 
     border-top: 1px solid black;
     display: block;
     height: 1px;
@@ -83,10 +85,190 @@ form div span {
     right: 0;
     left: auto;
   }
-  .article1,.article2,.article3,.article4,.article5 {
-    width: 180px;
-    height: 240px;
-    margin-right: 2rem;
-    background-color: rgb(95, 95, 100);
-    border-radius: 10px;
+.article {
+  width: 180px;
+  height: 240px;
+  margin-right: 2rem;
+  background-color: rgb(95, 95, 100);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:start;
+}
+.image-div {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  right: 10%; 
+  top: 15%;
+  float: right;
+}
+.main-card {
+  position: relative;
+  top: 15%;
+}
+.article h3,div {
+  text-align: center;
+  position: relative;
+  top: 5%;
+}
+.main {
+  height: 850px;
+  width: 1150px;
+}
+.main-data{
+  width:1050px ;
+  height: 250px;
+}
+.alldata-cards{
+  height: 400px;
+}
+
+@media screen and (min-width:380px) and (max-width:770px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
   }
+  .sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 768px;
+    height: 400px;
+    position: relative;
+    top: 10%;
+    overflow-y: hidden;
+  }
+  .form{
+    position: relative;
+    top: 10%;
+    
+  }
+  .main{
+    width: 100%;
+    height: 1100px;
+    display:flex;
+    flex-direction: column;
+    position: relative; 
+    left: 0%;
+  }
+  .main-data{
+    width:auto;
+    height: 200px;
+    overflow-y: hidden;
+    margin-right: 2rem;
+  }
+  .alldata-cards{
+    width: 100%;
+    height: 700px;
+    /* margin-top: 3rem; */
+
+  }
+  .article{
+    height: 250px;
+    width: 300px;
+    margin: 0;
+    margin-right: 10px;
+  }
+  .article:nth-child(5){
+    margin-right: 2.5rem;
+  }
+}
+
+@media screen and (max-width:376px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+  .sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 400px;
+    position:relative;
+    top: 10%;
+    overflow-y: hidden;
+  }
+  .form{
+    width: 375px;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .main{
+    width: 100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    position: relative; 
+    left: 0%;
+  }
+  .locationDetails{
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    left: 0;
+  }
+  .main-card{
+    position: relative;
+    overflow: hidden;
+  }
+  .main-data{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width:350px;
+    position: relative;
+    height: 400px;
+    overflow-y: hidden;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .image-div{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* left: 10%; */
+    top: 0%;
+  }
+  .alldata-cards{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    /* margin-top: 3rem; */
+
+  }
+  .heading{
+    text-align: center;
+    position: relative;
+    right: 7%;
+    margin-bottom: 2rem;
+  }
+  .allarticles{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .article{
+    height: 250px;
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+  .article:nth-child(5){
+    margin-right: 2.5rem;
+  }
+}

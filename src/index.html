@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
-    <script src="./indexnew.js" defer></script>
+    <script src="./ex.js" defer></script>
 
 </head>
 <body class="font-serif">
@@ -14,8 +14,8 @@
             <h1 class=" h-20 text-3xl font-bold text-center flex justify-center items-center text-white bg-blue-700">Weather Dashboard</h1>
         </div>
     </header>
-    <sidebar class="bg-blue-200 h-dvh ">
-        <div class="flex justify-center items-center relative top-10">
+    <sidebar class="sidebar bg-blue-200">
+        <div class="form flex justify-center items-center relative top-10">
             <form action="" class="w-72 h-96 ">
                 <label class=" w-72 text-2xl font-bold my-10 py-9" for="cityname" >Enter a City Name</label><br>
                 <input id="cityname" class="buttons" type="text" placeholder="Eg :Newyork, london, Tokyo" ><br>
@@ -26,26 +26,56 @@
         </div>
       </sidebar>
     
-    <main class="w-9/12 h-dvh">
-       <section class=" text-white w-12/12 h-72 bg-blue-200">
-          <section class="locationDetails h-64 ml-8 mt-4 rounded-lg bg-blue-700 w-11/12">
-            <img src="images/default-1.png" class="weather-img rounded-lg block" alt="">
-            <div class="locationDate">London (<span class="date">28-3-2024</span>)</div>
-            <div class="temp">Temprature : <span>0°</span></div>
-            <div class="wind">Wind : 2.33 M/S</div>
-            <div class="humidity">Humidity : 88%</div>
-            <img class="not-found hidden" src="images/404.png" alt="">
-          </section>
+    <main class="main">
+       <section class=" font-sans text-white bg-blue-200">
+          <article class="main-data flex flex-row justify-between ml-8 mt-8 rounded-lg bg-blue-700 w-11/12">
+            <article class="locationDetails w-72">
+              <div class="main-card">
+                <h3 class="font-bold text-xl">London(2024-01-01)</h3>
+                <div>Temp : --</div>
+                <div>Wind : --M/S</div>
+                <div>Humidity : --%</div>
+              </div>
+            </article>
+            <div class="image-div">
+              <img src="images/default-1.png" class="weather-img rounded-lg" alt="">
+            </div>
+          </article>
        </section>
-       <section class="h-96 bg-blue-200">
-          <div><h3 class="text-black font-bold bg-blue-200 ml-16 font-sans text-2xl">5-Day Forecast</h3></div>
-          <section class="allarticles flex flex-row ml-12 mt-6">
-            <article class="article1"></article>
-            <article class="article2"></article>
-            <article class="article3"></article>
-            <article class="article4"></article>
-            <article class="article5"></article>
-            </section>
+       <section class="bg-blue-200 alldata-cards">
+          <div><h3 class="heading text-black text-start font-bold bg-blue-200 ml-16 mb-4 font-sans text-2xl">5-Day Forecast</h3></div>
+          <section class="allarticles font-sans text-white flex flex-row ml-12 mt-6">
+            <article class="article">
+              <h3 class="font-bold text-xl">(2024-04-24)</h3>
+              <div>Temp : --</div>
+              <div>Wind : --M/S</div>
+              <div>Humidity : --%</div>
+            </article>
+            <article class="article">
+              <h3 class="font-bold text-xl">(2024-04-24)</h3>
+              <div>Temp : --</div>
+              <div>Wind : --M/S</div>
+              <div>Humidity : --%</div>
+            </article>
+            <article class="article">
+              <h3 class="font-bold text-xl">(2024-04-24)</h3>
+              <div>Temp : --</div>
+              <div>Wind : --M/S</div>
+              <div>Humidity : --%</div>
+            </article>
+            <article class="article">
+              <h3 class="font-bold text-xl">(2024-04-24)</h3>
+                <div>Temp : --</div>
+                <div>Wind : --M/S</div>
+                <div>Humidity : --%</div>
+            </article>
+            <article class="article">
+              <h3 class="font-bold text-xl">(2024-04-24)</h3>
+                <div>Temp : --</div>
+                <div>Wind : --M/S</div>
+                <div>Humidity : --%</div>
+            </article>
+          </section>
        </section>
     </main>
 </body>
