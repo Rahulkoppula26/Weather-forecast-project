@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
-    <script src="./ex.js" defer></script>
+    <script src="./script.js" defer></script>
 
 </head>
 <body class="font-serif">
@@ -18,7 +18,18 @@
         <div class="form flex justify-center items-center relative top-10">
             <form action="" class="w-72 h-96 ">
                 <label class=" w-72 text-2xl font-bold my-10 py-9" for="cityname" >Enter a City Name</label><br>
-                <input id="cityname" class="buttons" type="text" placeholder="Eg :Newyork, london, Tokyo" ><br>
+                <div class="dropdown"><input for="cityInput" id="cityname" class="buttons" type="text" placeholder="Eg :Newyork, london, Tokyo" >
+                  <select name="city" id="cityInput">
+                    <option value="Karimnagar">Karimnagar</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Japan">Japan</option>
+                    <option value="New York">New York</option>
+                    <option value="Tokyo">Tokyo</option>
+                    <option value="London">London</option>
+                  </select></div>
+                <br>
                 <button class="buttons bg-blue-500 text-white text-xl font-medium" id="searchBtn" type="button" value="submit" >Search</button><br>
                 <div class="my-6 font-extrabold"><span>OR</span></div>
                 <button class="buttons bg-blue-500 text-white text-xl font-medium" id="locationBtn" type="button" value="submit" >Use Current Location</button>

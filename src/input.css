@@ -33,6 +33,29 @@ input,button {
     margin: 1rem 0;
     height: 2rem;
 }
+select, option {
+  width: 1rem;
+  height: 2rem;
+  background-color: #fff;
+  border:2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}  
+option {
+  background-color: #fff;
+  color: #333;
+}
+.dropdown{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 div .weather-img {
   width: 100px;
   height: 100px;

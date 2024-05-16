@@ -3,6 +3,11 @@ const locationButton = document.getElementById("locationBtn");
 const cityName =document.getElementById("cityname");
 const weatherSection =document.querySelector(".allarticles");
 const currentWeather =document.querySelector(".locationDetails");
+const citySelect = document.getElementById("cityInput");
+
+citySelect.addEventListener("change", () => {
+  cityName.value = citySelect.value;
+});
 
 const API_KEY = "be4beef315a177569ce308eb558062a9";
 
